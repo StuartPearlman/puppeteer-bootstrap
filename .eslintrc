@@ -1,0 +1,33 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2,
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "class-methods-use-this": "off"
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "plugins": [
+    "chai-friendly"
+  ],
+  "globals": {
+    "expect": "readonly",
+    "browser": "readonly",
+    "page": "readonly"
+  }
+}
