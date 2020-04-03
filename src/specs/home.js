@@ -11,7 +11,7 @@ describe('The Inspire11 homepage', () => {
 
     it('should display the company logo', async () => {
         try {
-            expect(await isVisibleBySelector('[alt="Inspire11"]')).to.be.true;
+            expect(await isVisibleBySelector('[href="/"] > img')).to.be.true;
         } catch (error) {
             await takeScreenshot({ error, fileName: __filename });
         }

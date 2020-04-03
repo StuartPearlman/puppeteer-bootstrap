@@ -9,16 +9,16 @@ describe('The Inspire11 "About" page', () => {
         await aboutPage.open();
     });
 
-    it('should open links to our community partners in new tabs', async () => {
+    it('should open the link to our job board in a new tab', async () => {
         try {
-            const link = await aboutPage.getCommunityPartnerLink();
+            const link = await aboutPage.getCareersButtonLink();
             await link.click();
             const href = await getAttrValue(link, 'href');
-            const communityPartnerTab = await getTabByUrl(href);
+            const greenhouseTab = await getTabByUrl(href);
 
-            expect(communityPartnerTab).to.exist;
+            expect(greenhouseTab).to.exist;
 
-            await communityPartnerTab.close();
+            await greenhouseTab.close();
         } catch (error) {
             await takeScreenshot({ error, fileName: __filename });
         }
