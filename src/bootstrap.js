@@ -1,3 +1,4 @@
+// Suppress in Bitbucket since ENV vars get passed in through pipeline
 const isBitbucket = process.env.BITBUCKET;
 require('dotenv-extended').load({
     silent: isBitbucket,
@@ -25,7 +26,7 @@ const opts = {
 async function setupBrowser() {
     const page = await browser.newPage();
     await page.goto(env.baseUrl, {
-        waitUntil: 'networkidle0',
+        waitUntil: 'networkidle0', // Page is loaded when requests stop
     });
 
     // Can't close this until at least one other tab is open
@@ -40,6 +41,7 @@ async function setupBrowser() {
     return page;
 }
 
+// Expose these to avoid lint errors and provide access to sensible globals
 before(async () => {
     global.expect = expect;
     global.browser = await puppeteer.launch(opts);

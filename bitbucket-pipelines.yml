@@ -4,6 +4,7 @@ pipelines:
   branches:
     master:
       - step:
+          name: Install deps and run specs
           caches:
             - node
           script:

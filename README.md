@@ -1,10 +1,12 @@
-# puppet-master
+# puppeteer-bootstrap
 Scaffolded project for painless QA automation.
+
+Add your own Pages and specs, push to Bitbucket, PROFIT.
 
 Failed tests generate screenshots in `/screenshots`.
 
 ## Tooling
-*  [Node 8+](https://nodejs.org/en/) (developed on Node 12)
+*  [Node 10+](https://nodejs.org/en/) (developed on Node 12)
 *  [Puppeteer](https://pptr.dev/)
 *  [Mocha](https://mochajs.org/)
 *  [Chai](https://www.chaijs.com/)

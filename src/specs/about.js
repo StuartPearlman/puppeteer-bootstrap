@@ -1,3 +1,9 @@
+/*
+ These are your specs.
+ This is where you should manipulate elements, describe behaviors, and set expectations.
+ Wrapping your specs in a try/catch allows for screenshots while preserving error propagation.
+ */
+
 const { takeScreenshot, getAttrValue, getTabByUrl } = require('../helpers');
 const { AboutPage } = require('../Pages/About');
 
@@ -5,6 +11,7 @@ describe('The Inspire11 "About" page', () => {
     let aboutPage;
 
     before(async () => {
+        // Init the Page and open it
         aboutPage = new AboutPage();
         await aboutPage.open();
     });

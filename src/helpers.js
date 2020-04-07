@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const ENV = require('./ENV');
 
+// Make ENV vars available as object
 function getEnv() {
     let config;
 
@@ -19,6 +20,7 @@ function getEnv() {
     return config;
 }
 
+// Wrapper to catch errors and take a screenshot
 async function takeScreenshot({ error, fileName }) {
     const dateString = new Date().toISOString().replace(/T.+/, '');
     const files = fs.readdirSync('screenshots');
@@ -32,22 +34,26 @@ async function takeScreenshot({ error, fileName }) {
     throw error;
 }
 
+// Switch between tabs by url
 async function getTabByUrl(url) {
     await browser.waitForTarget(target => target.url().includes(url));
     const pages = await browser.pages();
     return pages.find(page => page.url().includes(url));
 }
 
+// Expose friendlier API for attrs
 async function getAttrValue(elm, attr) {
     const propertyHandle = await elm.getProperty(attr);
     return propertyHandle.jsonValue();
 }
 
+// Expose friendlier API for element visibility
 async function isVisibleBySelector(selector) {
     await page.waitForSelector(selector, { visible: true });
     return true;
 }
 
+// Consistent way to clear inputs (other approaches have been unreliable)
 async function clearInputAndEnterValue(selector, value) {
     await page.click(selector, { clickCount: 3 });
     await page.keyboard.press('Backspace');
