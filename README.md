@@ -1,4 +1,14 @@
 # puppeteer-bootstrap
+
+![Inspire11 OSS](https://img.shields.io/badge/Inspire11-OSS-orange?style=for-the-badge&labelColor=ff6b00&color=0055b8)
+
+![Build status](https://img.shields.io/bitbucket/pipelines/inspire11/puppeteer-bootstrap?logo=bitbucket&style=flat-square)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/@inspire11/puppeteer-bootstrap?style=flat-square)
+
+![License](https://img.shields.io/npm/l/@inspire11/puppeteer-bootstrap?style=flat-square)
+![Package version](https://img.shields.io/npm/v/@inspire11/puppeteer-bootstrap?style=flat-square)
+![Node version](https://img.shields.io/node/v/@inspire11/puppeteer-bootstrap?style=flat-square)
+
 Scaffolded project for painless QA automation.
 
 Add your own Pages and specs, push to Bitbucket, PROFIT.
