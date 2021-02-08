@@ -36,9 +36,9 @@ async function takeScreenshot({ error, fileName }) {
 
 // Switch between tabs by url
 async function getTabByUrl(url) {
-    await browser.waitForTarget(target => target.url().includes(url));
+    await browser.waitForTarget((target) => target.url().includes(url));
     const pages = await browser.pages();
-    return pages.find(page => page.url().includes(url));
+    return pages.find((page) => page.url().includes(url));
 }
 
 // Expose friendlier API for attrs
