@@ -28,7 +28,7 @@ describe('The Inspire11 homepage', () => {
         try {
             await homePage.fillOutForm();
             const messageTextArea = await homePage.getMessageTextArea();
-            expect(await getAttrValue(messageTextArea, 'value')).to.equal('Thanks for using Puppet Master!');
+            expect(await getAttrValue(messageTextArea, 'value')).to.equal('Thanks for using Puppeteer Bootstrap!');
         } catch (error) {
             await takeScreenshot({ error, fileName: __filename });
         }
