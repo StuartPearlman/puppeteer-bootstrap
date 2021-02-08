@@ -6,8 +6,11 @@
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/@inspire11/puppeteer-bootstrap?style=flat-square)
 
 ![License](https://img.shields.io/npm/l/@inspire11/puppeteer-bootstrap?style=flat-square)
-![Package version](https://img.shields.io/npm/v/@inspire11/puppeteer-bootstrap?style=flat-square)
 ![Node version](https://img.shields.io/node/v/@inspire11/puppeteer-bootstrap?style=flat-square)
+
+![Puppeteer](https://img.shields.io/npm/dependency-version/@inspire11/puppeteer-bootstrap/puppeteer?style=flat-square)
+![Mocha](https://img.shields.io/npm/dependency-version/@inspire11/puppeteer-bootstrap/mocha?style=flat-square)
+![Chai](https://img.shields.io/npm/dependency-version/@inspire11/puppeteer-bootstrap/chai?style=flat-square)
 
 Scaffolded project for painless QA automation.
 
