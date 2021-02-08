@@ -16,7 +16,7 @@ Add your own Pages and specs, push to Bitbucket, PROFIT.
 Failed tests generate screenshots in `/screenshots`.
 
 ## Tooling
-*  [Node 10+](https://nodejs.org/en/) (developed on Node 12)
+*  [Node 15+](https://nodejs.org/en/) (developed on Node 15.8.0)
 *  [Puppeteer](https://pptr.dev/)
 *  [Mocha](https://mochajs.org/)
 *  [Chai](https://www.chaijs.com/)

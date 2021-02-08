@@ -22,10 +22,10 @@ class HomePage {
         await clearInputAndEnterValue('[name="Name"]', 'Mr. Lead');
         await clearInputAndEnterValue('[name="Email"]', 'lead@inspire11.com');
         await clearInputAndEnterValue('[name="Company-Name"]', 'Really awesome future client');
-        await clearInputAndEnterValue('[name="Message"]', 'Thanks for using Puppet Master!');
+        await clearInputAndEnterValue('[name="Message"]', 'Thanks for using Puppeteer Bootstrap!');
 
         // Don't actually submit it, of course
-        await page.waitFor(3000);
+        await page.waitForTimeout(3000);
     }
 }
 
